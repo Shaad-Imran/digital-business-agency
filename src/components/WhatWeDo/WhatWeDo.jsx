@@ -11,7 +11,7 @@ import {
   titleVariants,
 } from "@/src/utils/animation";
 
-export const WhatWeDo = () => {
+const WhatWeDo = () => {
   return (
     <div className="wwd-wrapper">
       <div className="container">
@@ -163,3 +163,5 @@ export const WhatWeDo = () => {
     </div>
   );
 };
+
+export default WhatWeDo;

@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import { Josefin_Sans } from "next/font/google";
 
 export const metadata = {

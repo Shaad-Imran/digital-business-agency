@@ -1,16 +1,40 @@
-import Navbar from "@/src/components/Navbar/Navbar";
+"use client";
+
 import "./page.css";
-import Hero from "@/src/components/Hero/Hero";
-import BrandingVideo from "@/src/components/BrandingVideo/BrandingVideo";
-import { WhatWeDo } from "@/src/components/WhatWeDo/WhatWeDo";
+import {
+  Navbar,
+  Hero,
+  BrandingVideo,
+  WhatWeDo,
+  OurDiff,
+} from "@/src/components";
+import { motion, useAnimation } from "framer-motion";
 
 export default function Home() {
+  const controls = useAnimation();
+
   return (
-    <div className="app">
+    <motion.div className="app" animate={controls}>
       <Navbar />
       <Hero />
       <BrandingVideo />
       <WhatWeDo />
-    </div>
+
+      <motion.div
+        onViewportEnter={() =>
+          controls.start({
+            backgroundColor: "var(--secondary-color)",
+          })
+        }
+        onViewportLeave={() =>
+          controls.start({
+            backgroundColor: "white",
+          })
+        }
+        viewport={{ amount: 0.4 }}
+      >
+        <OurDiff />
+      </motion.div>
+    </motion.div>
   );
 }

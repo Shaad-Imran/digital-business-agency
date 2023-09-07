@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Hero.css";
-import EmailBox from "../EmailBox/EmailBox";
+import { EmailBox } from "..";
 import { HeroData } from "@/src/utils/data";
 import { motion } from "framer-motion";
 

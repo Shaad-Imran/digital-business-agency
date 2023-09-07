@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import "./EmailBox.css";
 import { LuMail } from "react-icons/lu";
