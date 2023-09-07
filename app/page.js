@@ -7,6 +7,7 @@ import {
   BrandingVideo,
   WhatWeDo,
   OurDiff,
+  HowItWorks,
 } from "@/src/components";
 import { motion, useAnimation } from "framer-motion";
 
@@ -35,6 +36,8 @@ export default function Home() {
       >
         <OurDiff />
       </motion.div>
+
+      <HowItWorks />
     </motion.div>
   );
 }
