@@ -8,6 +8,7 @@ import HowItWorks from "./HowItWorks/HowItWorks";
 import WhoWeInvestIn from "./WhoWeInvestIn/WhoWeInvestIn";
 import Testimonials from "./Testimonials/Testimonials";
 import SlickSlider from "./Testimonials/SlickSlider";
+import Footer from "./Footer/Footer";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   WhoWeInvestIn,
   Testimonials,
   SlickSlider,
+  Footer,
 };
