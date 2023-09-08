@@ -5,5 +5,15 @@ import BrandingVideo from "./BrandingVideo/BrandingVideo";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import OurDiff from "./OurDiff/OurDiff";
 import HowItWorks from "./HowItWorks/HowItWorks";
+import WhoWeInvestIn from "./WhoWeInvestIn/WhoWeInvestIn";
 
-export { Navbar, Hero, EmailBox, BrandingVideo, WhatWeDo, OurDiff, HowItWorks };
+export {
+  Navbar,
+  Hero,
+  EmailBox,
+  BrandingVideo,
+  WhatWeDo,
+  OurDiff,
+  HowItWorks,
+  WhoWeInvestIn,
+};
