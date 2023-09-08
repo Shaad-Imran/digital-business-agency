@@ -6,6 +6,8 @@ import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import OurDiff from "./OurDiff/OurDiff";
 import HowItWorks from "./HowItWorks/HowItWorks";
 import WhoWeInvestIn from "./WhoWeInvestIn/WhoWeInvestIn";
+import Testimonials from "./Testimonials/Testimonials";
+import SlickSlider from "./Testimonials/SlickSlider";
 
 export {
   Navbar,
@@ -16,4 +18,6 @@ export {
   OurDiff,
   HowItWorks,
   WhoWeInvestIn,
+  Testimonials,
+  SlickSlider,
 };

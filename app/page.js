@@ -9,6 +9,7 @@ import {
   OurDiff,
   HowItWorks,
   WhoWeInvestIn,
+  Testimonials,
 } from "@/src/components";
 import { motion, useAnimation } from "framer-motion";
 
@@ -55,6 +56,8 @@ export default function Home() {
       >
         <WhoWeInvestIn />
       </motion.div>
+
+      <Testimonials />
     </motion.div>
   );
 }
