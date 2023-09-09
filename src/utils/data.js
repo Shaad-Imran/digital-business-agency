@@ -116,26 +116,26 @@ export const whoWeInvest = [
 export const testimonialsData = [
   {
     comment:
-      "SUPER HAPPY! Not only do you get to see the best seed and Early Stage companies but the exciting part is there’s a bunch of investors",
-    name: "Zach Lee",
-    profession: "QA specialist, Matrix architect",
+      "Working with your team has been an absolute pleasure. They provided us with innovative solutions that helped boost our online presence and drive more traffic to our website. Highly recommended!",
+    name: "Mark Thompson",
+    profession: "CEO, Tech Innovators Inc.",
   },
   {
     comment:
-      "I have been working with ZAINKEEPSCODE on our fundraising strategies. They understands the in depth strategies of Venture Capital and early stage fund raising/company",
-    name: "Cheryl R. Weiss",
-    profession: "Founder, Dubrow Cafeteria",
+      "The team at your agency is top-notch. They understood our brand vision and delivered a website that exceeded our expectations. Their expertise in digital marketing is truly impressive.",
+    name: "Sarah Miller",
+    profession: "Marketing Director, Bright Ideas Co.",
   },
   {
     comment:
-      "Another masterpiece really digging into the art of venture funds, portfolio construction and deal mechanics! Loved it - I can say without hesitation that it is incredibly valuable for anyone who is investing",
-    name: "Vicky R. Lane",
-    profession: "Directork, Lafayette Radio",
+      "I can't thank your agency enough for the outstanding work they've done for us. Our conversion rates have gone through the roof since we started working with you. Keep up the great work!",
+    name: "David Rodriguez",
+    profession: "E-commerce Entrepreneur",
   },
   {
     comment:
-      "BlueVenture is the premier setting for entrepreneurs and investors alike to exchange ideas, and network. As an entrepreneur, I can rely on the BlueVenture to bring top caliber speakers, entrepreneurs and investors",
-    name: "Jennifer Dubois",
-    profession: "Manager, China Coast",
+      "From strategy to execution, your agency has been instrumental in our online success. Their creative campaigns have helped us reach a wider audience and achieve our business goals.",
+    name: "Emily Parker",
+    profession: "Founder, Growth Solutions Ltd.",
   },
 ];

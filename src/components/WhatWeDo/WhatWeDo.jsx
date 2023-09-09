@@ -13,7 +13,7 @@ import {
 
 const WhatWeDo = () => {
   return (
-    <div className="wwd-wrapper">
+    <div className="wwd-wrapper" id="wwd">
       <div className="container">
         <div className="wwd-container">
           {/* head of section  */}

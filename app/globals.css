@@ -31,8 +31,19 @@ body {
   transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--title-color);
+}
+
 .container {
-  border: 2px solid red;
   width: 100%;
   margin: auto;
   overflow: hidden;

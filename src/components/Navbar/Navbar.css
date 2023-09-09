@@ -5,8 +5,17 @@
   z-index: 999;
 }
 
+.sticky {
+  position: fixed;
+  box-shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+  background-color: white;
+  top: 0;
+}
+
 .n-container {
+  /* border: 2px solid green; */
   padding: 1.5rem 1rem;
+  /* padding: 1rem; */
   color: white;
   font-size: 1rem;
   display: flex;
@@ -15,9 +24,15 @@
   font-weight: 500;
 }
 
+.sticky .n-container {
+  color: var(--title-color);
+  padding: 1rem;
+}
+
 .n-logo {
   font-weight: bold;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .n-right {
@@ -59,9 +74,8 @@
   }
 
   .nm-container {
-    display: block;
-    color: white;
     display: flex;
+    color: white;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
@@ -71,11 +85,12 @@
 
   .nm-container > :nth-child(1) {
     font-weight: bold;
+    text-transform: uppercase;
   }
 
   .nm-menu {
     position: fixed;
-    top: 4rem;
+    top: 3.8rem;
     padding: 3rem 2rem;
     box-sizing: border-box;
     left: 0;
@@ -87,10 +102,11 @@
     width: 100%;
     font-size: 1.2rem;
     z-index: 99;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 3.8rem);
+    cursor: pointer;
   }
 
-  .nm-menu span {
+  .nm-menu a {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-color);

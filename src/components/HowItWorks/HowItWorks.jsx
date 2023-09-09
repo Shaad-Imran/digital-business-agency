@@ -20,7 +20,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <div className="hiw-wrapper">
+    <div className="hiw-wrapper" id="hiw">
       <div className="container">
         <div className="hiw-container">
           {/* head  */}

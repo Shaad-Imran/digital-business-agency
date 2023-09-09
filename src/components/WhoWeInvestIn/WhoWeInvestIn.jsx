@@ -10,7 +10,7 @@ import {
 
 const WhoWeInvestIn = () => {
   return (
-    <div className="wwi-wrapper">
+    <div className="wwi-wrapper" id="wwi">
       <div className="container">
         <div className="wwi-container">
           {/* left side */}
