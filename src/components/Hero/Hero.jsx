@@ -37,10 +37,8 @@ const Hero = () => {
   });
 
   return (
-    <div className="h-wrapper">
+    <section className="h-wrapper">
       <div className="container">
-        <img src="hero/hero-arrow.png" alt="arrow" className="h-arrow" />
-
         <div className="h-container">
           {/* left side  */}
           <div className="h-left">
@@ -106,7 +104,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

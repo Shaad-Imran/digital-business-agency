@@ -14,7 +14,7 @@ const BrandingVideo = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <div className="bv-container">
+    <section className="bv-container">
       <div className="container">
         <motion.video
           ref={ref}
@@ -28,7 +28,7 @@ const BrandingVideo = () => {
           <source src="/video.mp4" type="video/mp4" />
         </motion.video>
       </div>
-    </div>
+    </section>
   );
 };
 

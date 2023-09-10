@@ -12,7 +12,7 @@ import {
 
 const OurDiff = () => {
   return (
-    <div className="od-wrapper">
+    <section className="od-wrapper">
       <div className="container">
         <div className="od-container">
           {/* head  */}
@@ -62,14 +62,14 @@ const OurDiff = () => {
                   height={128}
                   alt={feature.title}
                 />
-                <span class="sec-title">{feature.title}</span>
-                <span class="text">{feature.des}</span>
+                <span className="sec-title">{feature.title}</span>
+                <span className="text">{feature.des}</span>
               </motion.div>
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

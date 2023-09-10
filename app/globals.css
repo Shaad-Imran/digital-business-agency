@@ -2,8 +2,8 @@
 :root {
   --dark-bg: #000;
   --light-bg: #f6f7fb;
-  --primary-color: #533fd7;
-  --secondary-color: #00caf9;
+  --primary-color: #5541d8;
+  --secondary-color: #00ccfa;
   --third-color: #54f3a6;
   --fourth-color: #fee590;
   --text-color: #867eb5;
@@ -15,6 +15,12 @@
   --border-color-dark: #27263a;
   --border-color-light: #6a55f8;
   --shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -29,6 +35,11 @@ body {
   padding: 0 !important;
   touch-action: pan-y, pan-x;
   transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
+  /* height: 520vh; */
+}
+
+li {
+  list-style: none;
 }
 
 ::-webkit-scrollbar {

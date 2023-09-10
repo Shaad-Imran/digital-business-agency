@@ -4,25 +4,24 @@ import { EmailBox } from "..";
 
 const Footer = () => {
   return (
-    <div className="f-wrapper">
+    <footer className="f-wrapper">
       <div className="container">
         <div className="f-container">
-          <span className="title"></span>
-          Get Funded Today!
+          <span className="title">Get Funded Today!</span>
           <EmailBox />
           <hr />
-          <div className="f-menu">
-            <span>Home</span>
-            <span>what we do</span>
-            <span>how it works</span>
-            <span>who we invest in</span>
-            <span>testimonials</span>
-          </div>
+          <ul className="f-menu">
+            <li>Home</li>
+            <li>what we do</li>
+            <li>how it works</li>
+            <li>who we invest in</li>
+            <li>testimonials</li>
+          </ul>
           <hr />
           <span className="text">Made with 🤍 by Shaad Imran</span>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -13,7 +13,7 @@ import {
 
 const WhatWeDo = () => {
   return (
-    <div className="wwd-wrapper" id="wwd">
+    <section className="wwd-wrapper" id="wwd">
       <div className="container">
         <div className="wwd-container">
           {/* head of section  */}
@@ -160,7 +160,7 @@ const WhatWeDo = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -20,7 +20,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <div className="hiw-wrapper" id="hiw">
+    <section className="hiw-wrapper" id="hiw">
       <div className="container">
         <div className="hiw-container">
           {/* head  */}
@@ -87,7 +87,7 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import { SlickSlider } from "..";
 
 const Testimonials = () => {
   return (
-    <div className="t-wrapper" id="testimonial">
+    <section className="t-wrapper" id="testimonial">
       <div className="container">
         <div className="t-container">
           <div className="t-head">
@@ -19,7 +19,7 @@ const Testimonials = () => {
         {/* slider  */}
         <SlickSlider />
       </div>
-    </div>
+    </section>
   );
 };
 

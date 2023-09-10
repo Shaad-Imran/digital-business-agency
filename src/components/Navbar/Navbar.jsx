@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -13,7 +13,9 @@ const Navbar = () => {
   const { scrollYProgress } = useScroll();
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (latest > 0.2) {
+    if (window.innerWidth < 1200) {
+      setNavStyle("sticky");
+    } else if (window.innerWidth > 1200 && latest > 0.2) {
       setNavStyle("sticky");
     } else {
       setNavStyle("");
@@ -21,91 +23,108 @@ const Navbar = () => {
   });
 
   return (
-    <div className={`n-wrapper ${navStyle}`}>
-      {/* desktop version  */}
-      <div className="container">
+    <header className={`n-wrapper ${navStyle}`}>
+      {/* Desktop version */}
+      <nav className="container">
         <div className="n-container">
-          {/* left side  */}
-          <div className="n-logo">
-            <span>InnoHub</span>
-          </div>
+          {/* Left side */}
+          <h3 className="n-logo">InnoHub</h3>
 
-          {/* right side  */}
+          {/* Right side */}
           <div className="n-right">
-            <div className="n-menu">
-              <ScrollLink to="wwd" spy={true} smooth={true}>
-                <span>What we do</span>
-              </ScrollLink>
-              <ScrollLink to="hiw" spy={true} smooth={true}>
-                <span>How it works</span>
-              </ScrollLink>
-              <ScrollLink to="wwi" spy={true} smooth={true}>
-                <span>Who we invest in</span>
-              </ScrollLink>
-              <ScrollLink to="testimonial" spy={true} smooth={true}>
-                <span>Testimonials</span>
-              </ScrollLink>
-            </div>
+            <ul className="n-menu">
+              <li>
+                <ScrollLink to="wwd" spy={true} smooth={true}>
+                  What we do
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="hiw" spy={true} smooth={true}>
+                  How it works
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="wwi" spy={true} smooth={true}>
+                  Who we invest in
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink to="testimonial" spy={true} smooth={true}>
+                  Testimonials
+                </ScrollLink>
+              </li>
+            </ul>
 
-            <div className="fund-button">get funded</div>
+            <button className="fund-button">Get Funded</button>
           </div>
         </div>
-      </div>
+      </nav>
 
-      {/* mobile/tab version  */}
+      {/* Mobile/tab version */}
       <div className="nm-container">
-        {/* logo */}
-        <span>InnoHub</span>
+        {/* Logo */}
+        <h3>InnoHub</h3>
 
-        {/* menu icon  */}
+        {/* Menu icon */}
         {!mobileMenuOpened ? (
           <BiMenuAltRight size={30} onClick={() => setMobileMenuOpened(true)} />
         ) : (
           <RxCross2 size={30} onClick={() => setMobileMenuOpened(false)} />
         )}
 
-        {/*  mobile menu */}
-        <div
+        {/* Mobile menu */}
+        <ul
           className="nm-menu"
-          style={{ transform: mobileMenuOpened && "translateX(0%)" }}
+          style={{
+            transform: mobileMenuOpened && "translateX(0%)",
+          }}
         >
-          <ScrollLink
-            onClick={() => setMobileMenuOpened(false)}
-            to="wwd"
-            spy={true}
-            smooth={true}
-          >
-            <span>What we do</span>
-          </ScrollLink>
-          <ScrollLink
-            onClick={() => setMobileMenuOpened(false)}
-            to="hiw"
-            spy={true}
-            smooth={true}
-          >
-            <span>How it works</span>
-          </ScrollLink>
-          <ScrollLink
-            onClick={() => setMobileMenuOpened(false)}
-            to="wwi"
-            spy={true}
-            smooth={true}
-          >
-            <span>Who we invest in</span>
-          </ScrollLink>
-          <ScrollLink
-            onClick={() => setMobileMenuOpened(false)}
-            to="testimonial"
-            spy={true}
-            smooth={true}
-          >
-            <span>Testimonials</span>
-          </ScrollLink>
-
-          <div className="m-fund-button">get funded</div>
-        </div>
+          <li>
+            <ScrollLink
+              onClick={() => setMobileMenuOpened(false)}
+              to="wwd"
+              spy={true}
+              smooth={true}
+            >
+              What we do
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => setMobileMenuOpened(false)}
+              to="hiw"
+              spy={true}
+              smooth={true}
+            >
+              How it works
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => setMobileMenuOpened(false)}
+              to="wwi"
+              spy={true}
+              smooth={true}
+            >
+              Who we invest in
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              onClick={() => setMobileMenuOpened(false)}
+              to="testimonial"
+              spy={true}
+              smooth={true}
+            >
+              Testimonials
+            </ScrollLink>
+          </li>
+          <li>
+            <div className="m-fund-button">get funded</div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </header>
   );
 };
 

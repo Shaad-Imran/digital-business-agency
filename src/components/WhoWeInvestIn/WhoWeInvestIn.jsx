@@ -10,7 +10,7 @@ import {
 
 const WhoWeInvestIn = () => {
   return (
-    <div className="wwi-wrapper" id="wwi">
+    <section className="wwi-wrapper" id="wwi">
       <div className="container">
         <div className="wwi-container">
           {/* left side */}
@@ -64,7 +64,7 @@ const WhoWeInvestIn = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

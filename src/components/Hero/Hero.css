@@ -1,27 +1,20 @@
 .h-wrapper {
   background-color: var(--primary-color);
-  height: 120vh;
   overflow: hidden;
+  padding-bottom: 4rem;
 }
 
 .h-wrapper .container {
   padding-top: 8rem;
 }
 
-.h-arrow {
-  position: absolute;
-  top: 5rem;
-  width: 100%;
-  max-width: 60rem;
-  z-index: 0;
-}
-
 .h-container {
   display: flex;
-  height: 80vh;
+  height: 80%;
   align-items: center;
   justify-content: space-around;
   position: relative;
+  overflow: hidden;
 }
 
 .h-left {
@@ -94,6 +87,7 @@
 @media (max-width: 1024px) {
   .h-wrapper {
     height: max-content;
+    padding-bottom: 1rem;
   }
 
   .h-wrapper .container {
@@ -106,10 +100,6 @@
     align-items: center;
     gap: 4rem;
     padding-bottom: 3rem;
-  }
-
-  .h-arrow {
-    display: none;
   }
 
   .h-right {
